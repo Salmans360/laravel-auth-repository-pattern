@@ -1,0 +1,585 @@
+/*
+Custom CSS
+*/
+
+.car-x-theme-dark {
+    background-color: #35363a;
+}
+.login-logo img {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+img.cards-bird {
+    position: absolute;
+    top: -48px;
+    right: 20px;
+    width: 122px;
+}
+
+/********* Loader Start *************/
+.table-overlay {
+    position: relative;
+}
+
+.loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+    z-index: 1000; /* Ensure loader is on top of everything */
+    display: none; /* Initially hide loader */
+}
+
+.loader::after {
+    content: 'Loading...';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #000;
+}
+
+.loader.active {
+    display: block; /* Show loader when active class is added */
+}
+/********* Loader End *************/
+
+
+/* Start of Top Header CSS */
+
+.navbar-brand img {
+    width: 110px;
+}
+
+.header-design-1 {
+    margin-left: 0;
+    margin-right: 0;
+    min-height: auto;
+    box-shadow: none !important;
+    background: transparent var(--background-url) repeat-x top left;
+    height: 106px;
+}
+
+.header-design-1 .navbar-expand-lg {
+    justify-content: center;
+}
+
+.header-design-1 .navbar-collapse ul.navbar-nav li.nav-item .nav-link {
+    background-color: #ffe617;
+    margin: 0 5px;
+    border-radius: 5px;
+    color: #000;
+    font-size: 12px;
+    padding: 8px 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.header-design-1 .navbar-collapse ul.navbar-nav li.nav-item .nav-link:hover {
+    background-image: -webkit-linear-gradient(top, #555555, #222222);
+    color: #fff;
+}
+
+.header-design-1 .container {
+    margin-top: 11px;
+}
+
+.header-design-2 {
+    margin-left: 0;
+    margin-right: 0;
+    min-height: auto;
+    box-shadow: none !important;
+    background: transparent var(--background-url) repeat-x top left;
+    /* height: 106px; */
+    margin-bottom: 15px;
+}
+
+.header-design-2 li.nav-item.dropdown a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-design-2 .navbar-brand img {
+    width: 203px;
+    margin-top: 7px;
+}
+
+.header-design-2 .navbar-collapse ul.navbar-nav li.nav-item .nav-link {
+    margin: 0 5px;
+    color: #000;
+}
+
+.header-design-2 .user-name {
+    color: #000;
+}
+
+.header-design-2 .navbar-collapse ul.navbar-nav li.nav-item .nav-link:hover,
+.header-design-2 .nav-link:hover .user-name {
+    opacity: 0.75;
+}
+
+.header-design-2 .header-bird img {
+    max-width: 122px;
+    margin-top: -53px;
+}
+
+ul.navbar-nav.navbar-nav-icons {
+    gap: 10px;
+}
+
+.nav-item.active .nav-link {
+    color: #ffffff !important;
+}
+
+.nav-item.active {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+.error{
+    display: block;
+}
+
+/* .header-bird {
+    position: absolute;
+    right: 20px;
+} */
+
+/* Start of Table CSS */
+form#searchForm input, form#searchForm button {
+    border-radius: 0;
+}
+
+img.cards-bird {
+    position: absolute;
+    top: -48px;
+    right: 20px;
+    width: 122px;
+}
+.input-search-width {
+    width: 20rem;
+}
+
+
+
+svg.w-5.h-5 {
+    width: 18px;
+    height: 28px;
+}
+
+nav[role="navigation"] .flex-1.sm\:hidden {
+    display: none;
+}
+
+
+/* Start CSS styles for pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination a, .pagination .active {
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    color: #333;
+    background-color: #fff;
+}
+
+.pagination a:hover {
+    background-color: #f0f0f0;
+}
+/* End CSS styles for pagination */
+
+
+
+/* Start CSS styles for Footer */
+.btn-cancel {
+    color: #fff;
+    padding: 5px 16px;
+    background: #e63757;
+    box-shadow: var(--falcon-btn-box-shadow);
+    --falcon-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+    border: var(--falcon-btn-border-width) solid var(--falcon-btn-border-color);
+}
+
+
+/* End CSS styles for Footer */
+
+
+/* Start of Form CSS */
+form#searchForm {
+    display: flex;
+}
+
+select#search_key {
+    border-right: 0;
+    border-color: rgba(var(--falcon-gray-300-rgb), var(--falcon-border-opacity)) !important;
+}
+
+select#search_key:focus-visible,
+input#search_value:focus {
+    outline: none !important;
+}
+
+span.required-sign {
+    color: red;
+    padding-left: 2px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+form img.flag-icon {
+    width: 25px;
+    margin-right: 5px;
+}
+
+.mx-width-70 {
+    max-width: 70px;
+}
+/* End of Form CSS */
+
+span[aria-current="page"] > .cursor-default {
+    background-color: black !important;
+    color: #fff;
+}
+
+.table-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    display: none; /* Initially hidden */
+    z-index: 1000; /* Ensure it appears above the table */
+}
+
+.table-overlay .spinner-border {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pad-left-0{
+    padding-left: 0px;
+}
+
+.label-min-width-110 label.form-label {
+    min-width: 110px;
+}
+
+.tox.tox-tinymce {
+    max-height: 150px;
+}
+
+/* Start of Create Coupon CSS */
+.coupon {
+    max-width: 700px;
+    height: 294px;
+    background: #fff;
+    border: 2px dashed #000;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    position: relative;
+    margin: 0px auto;
+}
+
+.print_button {
+    position: absolute;
+    top: -15px;
+    left: 25px;
+    width: 98px;
+    height: 28px;
+}
+
+.coupon_location {
+    position: absolute;
+    top: 20px;
+    right: 140px;
+    font-size: 10px;
+    text-align: right;
+    line-height: 120%;
+}
+
+.coupon_image {
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    left: 0px;
+}
+
+.barcode1 {
+    position: absolute;
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    top: 48px;
+    right: 10px;
+    text-align: right;
+    font-size: 10px;
+    font-family: verdana;
+    height: 60px;
+    overflow: hidden;
+}
+
+.coupon_icon {
+    position: absolute;
+    top: 80px;
+    left: 16px;
+    width: 90px;
+    height: 90px;
+}
+
+.coupon_content {
+    position: absolute;
+    top: 93px;
+    right: 20px;
+    left: 120px;
+    max-width: 560px;
+    height: 150px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.print_button button {
+    display: block;
+    width: 98px;
+    height: 28px;
+    background: url(https://www.carx.com/dnsc/images/print_coupon.gif) no-repeat top left;
+}
+
+.print_button span {
+    display: none;
+}
+
+.coupon_title_style {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #000;
+    line-height: 110% !important;
+    margin-bottom: 18px;
+}
+
+.coupon_desc_style {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+    line-height: 110%;
+}
+
+.coupon_details {
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    right: 20px;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+    line-height: 13px;
+    text-align: left;
+}
+
+.coupon_icon img {
+    max-width: 90px;
+}
+
+.coupon_image img {
+    max-width: 100%;
+}
+
+/* End of Create Coupon CSS */
+
+/* Breakpoint: Start of Desktop CSS */
+@media only screen and (min-width:992px) {
+
+    .header-design-2 .navbar-nav {
+        margin-top: -65px;
+    }
+
+}
+/* Breakpoint: End of Desktop CSS */
+
+/* Breakpoint: Start of Tab CSS */
+@media only screen and (max-width:991px) {
+
+    .header-design-2 .navbar-brand img {
+        margin-top: 7px;
+    }
+
+    .navbar-toggler, ul.navbar-nav-icons {
+        margin-top: -65px;
+    }
+
+    .header-design-2 .navbar-collapse {
+        background: #ffe518;
+        position: absolute;
+        top: 115px;
+        left: -4px;
+        width: calc(100% + 32px);
+        z-index: 1;
+    }
+
+
+    .header-design-2 .container {
+        max-width: 100%;
+    }
+
+}
+/* Breakpoint: End of Tab CSS */
+
+/* Breakpoint: Start of Mobile CSS */
+@media only screen and (max-width:768px) {
+
+    .navbar .container {
+        padding: 0;
+    }
+
+    .navbar .user-name {
+        display: none;
+    }
+
+    .coupon_image {
+        top: 20px;
+    }
+
+}
+
+@media only screen and (max-width:500px) {
+
+    ul.navbar-nav-icons {
+        margin-top: 50px;
+    }
+
+    .header-bird {
+        position: absolute;
+        right: -10px;
+        top: 43px;
+    }
+
+    button.navbar-toggler-humburger-icon {
+        margin-top: 55px;
+    }
+
+    .header-design-2 .navbar-brand img {
+        margin-top: 10px;
+    }
+
+    .header-design-2 .navbar-brand img {
+        width: 187px;
+    }
+
+    .coupon_location {
+        top: 20px;
+        right: 0;
+        left: 0;
+        text-align: center;
+    }
+
+    .coupon_image {
+        top: 35px;
+    }
+
+    .barcode1 {
+        top: 65px;
+    }
+
+    .coupon_content {
+        top: 110px;
+    }
+
+    .coupon_title_style {
+        font-size: 18px;
+        padding: 0 15px;
+        margin-bottom: 5px;
+    }
+
+    .coupon_desc_style {
+        font-size: 12px;
+        padding: 0 15px;
+    }
+
+    .coupon_details {
+        bottom: 5px;
+        left: 25px;
+        right: 20px;
+        font-size: 8px;
+        line-height: 9px;
+    }
+
+
+}
+
+@media only screen and (max-width: 350px) {
+    .coupon_content {
+        top: 140px;
+        right: 0;
+        left: 0;
+    }
+}
+
+@media print {
+    /* Define the style for printing */
+    body * {
+        visibility: hidden;
+    }
+    .printable .print_button button {
+        visibility: hidden;
+    }
+
+    .printable, .printable * {
+        visibility: visible;
+    }
+
+    /* Adjust page layout for printing */
+    @page {
+        size: auto; /* Let the browser choose the paper size */
+        margin: 0; /* No margin */
+    }
+    html, body {
+        width: 100%; /* Ensure full width */
+        overflow: hidden; /* Hide any overflow content */
+    }
+}
+/* Breakpoint: End of Mobile CSS */
+
+.custom-label{
+    font-weight: 600;
+}
+
+.hidden{
+    display: none;
+}
+
+.font-w-700{
+    font-weight: 700;
+}
+
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove{
+    position: relative !important;
+    border-right: none !important;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #edf2f9 !important;
+}
